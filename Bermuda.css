@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: palegoldenrod;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1b263b;
+}
+
+footer {
+  background-image: url('Bermuda-bg.jpg');
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}

@@ -1,0 +1,164 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e0e1b;
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navigation */
+header {
+  background: #1b1b2f;
+  padding: 1rem 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #FF0B46;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0DE6FF;
+}
+
+/* Hero Section */
+.hero {
+  background: url('Bg.jpg') no-repeat center center/cover;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #940DFF;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d61a6f;
+}
+
+/* Games Section */
+.games {
+  padding: 3rem 0;
+  background-image: url("Bg.jpg");
+}
+
+.games h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bermudasolo {
+  a{
+    text-decoration : none;
+    color: ghostwhite;
+  }
+  color: #8F38A6;
+  background-color: #330505;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.Clashsquad{
+  a{
+    text-decoration : none;
+    color: ghostwhite;
+  }
+  color: #8F38A6;
+  background-color: #330505;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.Lonewolf {
+  a{
+    text-decoration : none;
+    color: ghostwhite;
+  }
+  color: #8F38A6;
+  background-color: #330505;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.game-card {
+  background-color: #4A0F6B;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #560808;
+  text-align: center;
+  padding: 1rem 0;
+}
