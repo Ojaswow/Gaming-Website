@@ -17,7 +17,20 @@
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#games">Games</a></li>
-          <li><a href="#">Community</a></li>
+          <body>
+  <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // Ye code automatic toggle karega har 2 second me
+    setInterval(() => {
+      toggleDarkMode();
+    }, 250); // 2000ms = 2 second
+  </script>
+</body>
           <li><a href="Login.html">Login</a></li>
         </ul>
       </nav>

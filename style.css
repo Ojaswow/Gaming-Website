@@ -25,7 +25,28 @@ header {
 html {
   scroll-behavior: smooth;
 }
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: #00E6FF;
+}
 
+/* Dark Mode */
+.dark-mode {
+  background-color: #FF0000; /* dark grey/black */
+  color: #FF0000;
+}
+
+/* Example: Buttons */
+button {
+  background-color: black;
+  color: #FF0000;
+}
+
+.dark-mode button {
+  background-color: black;
+  color: #FDF500;
+}
 .nav {
   display: flex;
   justify-content: space-between;
