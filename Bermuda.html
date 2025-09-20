@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Bermuda</title>
-  <link rel="stylesheet" href="Bermuda.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="Bermuda.css">
 </head>
 <body>
-
   <header>
-    <h1>The Bermuda</h1>
-    <p>Learn about our Full map Bermuda E-Sport</p>
+    <h1>📘 My Personal Notes</h1>
   </header>
 
-  <main>
-    <section>
-      <h2>What is E-sport?</h2>
-      <p>The E-sport is a tournament where you earn prize according to you skills.</p>
-      <img src="Bermuda.png" alt="Bermuda - The full map" />
-    </section>
-
-    <section>
-      <h2>price</h2>
-      <ul>
-        <li>Booyah! - 500</li>
-        <li>no kill(looser return)- 5</li>
-        <li>per kill - 7</li>
-        <li>entry fees - 10</li>
-        <li>I'd level - 40</li>
-        <li>No hacker permanent ban</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Tip</h2>
-      <p>Kill To Win</p>
-    </section>
+  <main class="viewer">
+    <div class="main-img">
+      <img id="displayed-img" src="Firstpage.jpg" alt="Notes Page 1">
+    </div>
+    <div class="thumbnails">
+      <img src="Firstpage.jpg" alt="Page 1" onclick="changeImage(this)">
+      <img src="Secondpage.jpg" alt="Page 2" onclick="changeImage(this)">
+      <img src="Thirdpage.jpg" alt="Page 3" onclick="changeImage(this)">
+      <img src="Forthpage.jpg" alt="Page 4" onclick="changeImage(this)">
+      <img src="Fifthpage.jpg" alt="Page 5" onclick="changeImage(this)">
+      <img src="Sixthpage.jpg" alt="Page 6" onclick="changeImage(this)">
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Prime Legends. All rights reserved.</p>
+    <p>Made with ❤️ by OJAS</p>
   </footer>
 
+  <script>
+    function changeImage(element) {
+      let mainImg = document.getElementById("displayed-img");
+      mainImg.src = element.src;
+      mainImg.alt = element.alt;
+    }
+  </script>
 </body>
 </html>

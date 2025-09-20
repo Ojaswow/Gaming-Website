@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Bermuda</title>
-  <link rel="stylesheet" href="Bermuda.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="Clashsquad.css">
 </head>
 <body>
-
   <header>
-    <h1>The Clash Squad</h1>
-    <p>Learn about our Clash Squad 4v4 E-Sport</p>
+    <h1>📘 My Personal Notes</h1>
   </header>
 
-  <main>
-    <section>
-      <h2>What is Clash Squad?</h2>
-      <p>The clash squad is a match of 4v4 players. Where you fight and winning team gets a point and which teams scores 4 point will win.</p>
-      <img src="Clashsquad.png" alt="Clash Squad - A 4v4 battle" />
-    </section>
-
-    <section>
-      <h2>rules and price</h2>
-      <ul>
-        <li>Booyah! - 200</li>
-        <li>defeat (looser return)- 4</li>
-        <li>per kill - 0</li>
-        <li>entry fees - 25</li>
-        <li>I'd level - 40</li>
-        <li>No hacker permanent ban</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Tip</h2>
-      <p>Be a teamm player.</p></p>
-    </section>
+  <main class="viewer">
+    <div class="main-img">
+      <img id="displayed-img" src="1.jpg" alt="Notes Page 1">
+    </div>
+    <div class="thumbnails">
+      <img src="1.jpg" alt="Page 1" onclick="changeImage(this)">
+      <img src="2.jpg" alt="Page 2" onclick="changeImage(this)">
+      <img src="3.jpg" alt="Page 3" onclick="changeImage(this)">
+      <img src="4.jpg" alt="Page 4" onclick="changeImage(this)">
+      <img src="5.jpg" alt="Page 5" onclick="changeImage(this)">
+      <img src="6.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="7.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="8.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="9.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="10.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="11.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="12.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="13.jpg" alt="Page 6" onclick="changeImage(this)">
+      <img src="14.jpg" alt="Page 6" onclick="changeImage(this)">
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Prime Legends. All rights reserved.</p>
+    <p>Made with ❤️ by OJAS LORD</p>
   </footer>
 
+  <script>
+    function changeImage(element) {
+      let mainImg = document.getElementById("displayed-img");
+      mainImg.src = element.src;
+      mainImg.alt = element.alt;
+    }
+  </script>
 </body>
-</html> 
+</html>

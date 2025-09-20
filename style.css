@@ -28,13 +28,13 @@ html {
 /* Default Light Mode */
 body {
   background-color: white;
-  color: #00E6FF;
+  background: linear-gradient(90deg, #00E7BC);
 }
 
 /* Dark Mode */
 .dark-mode {
-  background-color: #FF0000; /* dark grey/black */
-  color: #FF0000;
+  background-color: linear-gradient mintcream; /* dark grey/black */
+  color: #A500E7;
 }
 
 /* Example: Buttons */

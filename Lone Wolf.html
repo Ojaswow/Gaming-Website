@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Bermuda</title>
-  <link rel="stylesheet" href="Bermuda.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="Ss.css">
 </head>
 <body>
-
   <header>
-    <h1>The Lone Wolf</h1>
-    <p>Learn about our Iron Cage Lone Wolf E-Sport</p>
+    <h1>📘 My Personal Notes</h1>
   </header>
 
-  <main>
-    <section>
-      <h2>What is Lone Wolf?</h2>
-      <p>In Lone Wolf You Need To Fight 1v1 To Opponent. There Evry Round  Winner Get 1 Point.Which player Score 5 Points First Will Win.</p>
-      <img src="Lonewolf.png" alt="Lone Wolf - The Iron Cage" />
-    </section>
-
-    <section>
-      <h2>PRICE</h2>
-      <ul>
-        <li>Booyah! - 100</li>
-        <li>no kill(looser return)- 0</li>
-        <li>per kill - 0</li>
-        <li>entry fees - 40</li>
-        <li>I'd level - 40</li>
-        <li>No hacker permanent ban</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Tip</h2>
-      <p>1v1 Experience Need</p>
-    </section>
+  <main class="viewer">
+    <div class="main-img">
+      <img id="displayed-img" src="firstpage.png" alt="Notes Page 1">
+    </div>
+    <div class="thumbnails">
+      <img src="firstpage.png" alt="Page 1" onclick="changeImage(this)">
+      <img src="secondpage.png" alt="Page 2" onclick="changeImage(this)">
+      <img src="thirdpage.png" alt="Page 3" onclick="changeImage(this)">
+      <img src="fourthpage.png" alt="Page 4" onclick="changeImage(this)">
+      <img src="fifthpage.png" alt="Page 5" onclick="changeImage(this)">
+      <img src="sixthpage.png" alt="Page 6" onclick="changeImage(this)">
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Prime Legends. All rights reserved.</p>
+    <p>Made with ❤️ by Me</p>
   </footer>
 
+  <script>
+    function changeImage(element) {
+      let mainImg = document.getElementById("displayed-img");
+      mainImg.src = element.src;
+      mainImg.alt = element.alt;
+    }
+  </script>
 </body>
 </html>
